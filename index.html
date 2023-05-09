@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="advs">
+        <div class="adv adv1">
+          <div class="target">
+            <input type="checkbox" name="adv1-all" class="chk-all" />
+            <label for="adv1-all">전체</label>
+            <input type="checkbox" name="adv1-1" />
+            <label for="adv1-1">1</label>
+            <input type="checkbox" name="adv1-2" />
+            <label for="adv1-2">2</label>
+            <input type="checkbox" name="adv1-3" />
+            <label for="adv1-3">3</label>
+            <input type="checkbox" name="adv1-4" />
+            <label for="adv1-4">4</label>
+            <input type="checkbox" name="adv1-5" />
+            <label for="adv1-5">5</label>
+          </div>
+          <div class="curr">
+            <input type="checkbox" name="adv1-curr" />
+            <label for="adv1-curr">이번</label>
+          </div>
+          <div class="hit">
+            <label for="adv1-hit">연성증가확률</label>
+            <input type="text" name="adv1-hit" />
+          </div>
+          <div class="crit">
+            <label for="adv1-crit">대성공확률</label>
+            <input type="text" name="adv1-crit" />
+          </div>
+          <div class="inc">
+            <label for="adv1-inc">단계증가</label>
+            <input type="text" name="adv1-inc" />
+          </div>
+          <div class="chan">
+            <label for="adv1-chan">기회소모X</label>
+            <input type="text" name="adv1-chan" />
+          </div>
+        </div>
+        <div class="adv adv2">
+          <div class="target">
+            <input type="checkbox" name="adv2-all" class="chk-all" />
+            <label for="adv2-all">전체</label>
+            <input type="checkbox" name="adv2-1" />
+            <label for="adv2-1">1</label>
+            <input type="checkbox" name="adv2-2" />
+            <label for="adv2-2">2</label>
+            <input type="checkbox" name="adv2-3" />
+            <label for="adv2-3">3</label>
+            <input type="checkbox" name="adv2-4" />
+            <label for="adv2-4">4</label>
+            <input type="checkbox" name="adv2-5" />
+            <label for="adv2-5">5</label>
+          </div>
+          <div class="curr">
+            <input type="checkbox" name="adv1-curr" />
+            <label for="adv1-curr">이번</label>
+          </div>
+          <div class="hit">
+            <label for="adv2-hit">연성증가확률</label>
+            <input type="text" name="adv2-hit" />
+          </div>
+          <div class="crit">
+            <label for="adv2-crit">대성공확률</label>
+            <input type="text" name="adv2-crit" />
+          </div>
+          <div class="inc">
+            <label for="adv2-inc">단계증가</label>
+            <input type="text" name="adv2-inc" />
+          </div>
+          <div class="chan">
+            <label for="adv2-chan">기회소모X</label>
+            <input type="text" name="adv2-chan" />
+          </div>
+        </div>
+        <div class="adv adv3">
+          <div class="target">
+            <input type="checkbox" name="adv3-all" class="chk-all" />
+            <label for="adv3-all">전체</label>
+            <input type="checkbox" name="adv3-1" />
+            <label for="adv3-1">1</label>
+            <input type="checkbox" name="adv3-2" />
+            <label for="adv3-2">2</label>
+            <input type="checkbox" name="adv3-3" />
+            <label for="adv3-3">3</label>
+            <input type="checkbox" name="adv3-4" />
+            <label for="adv3-4">4</label>
+            <input type="checkbox" name="adv3-5" />
+            <label for="adv3-5">5</label>
+          </div>
+          <div class="curr">
+            <input type="checkbox" name="adv1-curr" />
+            <label for="adv1-curr">이번</label>
+          </div>
+          <div class="hit">
+            <label for="adv3-hit">연성증가확률</label>
+            <input type="text" name="adv3-hit" />
+          </div>
+          <div class="crit">
+            <label for="adv3-crit">대성공확률</label>
+            <input type="text" name="adv3-crit" />
+          </div>
+          <div class="inc">
+            <label for="adv3-inc">단계증가</label>
+            <input type="text" name="adv3-inc" />
+          </div>
+          <div class="chan">
+            <label for="adv3-chan">기회소모X</label>
+            <input type="text" name="adv3-chan" />
+          </div>
+        </div>
+      </div>
+
+      <div class="curr-chan">
+        <label for="chance">남은 연성 횟수 :</label>
+        <input type="text" name="chance" class="chance" value="14" />
+      </div>
+      <table class="opts">
+        <thead>
+          <tr>
+            <th>연성확률</th>
+            <th>대성공확률</th>
+            <th>붙은횟수</th>
+            <th>1번기댓값</th>
+            <th>2번기댓값</th>
+            <th>3번기댓값</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="opt">
+            <td class="opt-hit">
+              <input type="text" value="20" data-per="20" />
+            </td>
+            <td class="opt-crit">
+              <input type="text" value="10" />
+            </td>
+            <td class="opt-cnt"><input type="text" value="0" /></td>
+            <td class="opt-expected opt1">2.8</td>
+            <td class="opt-expected opt2">2.8</td>
+            <td class="opt-expected opt3">2.8</td>
+          </tr>
+          <tr class="opt">
+            <td class="opt-hit">
+              <input type="text" value="20" data-per="20" />
+            </td>
+            <td class="opt-crit">
+              <input type="text" value="10" />
+            </td>
+            <td class="opt-cnt"><input type="text" value="0" /></td>
+            <td class="opt-expected opt1">2.8</td>
+            <td class="opt-expected opt2">2.8</td>
+            <td class="opt-expected opt3">2.8</td>
+          </tr>
+          <tr class="opt">
+            <td class="opt-hit">
+              <input type="text" value="20" data-per="20" />
+            </td>
+            <td class="opt-crit">
+              <input type="text" value="10" />
+            </td>
+            <td class="opt-cnt"><input type="text" value="0" /></td>
+            <td class="opt-expected opt1">2.8</td>
+            <td class="opt-expected opt2">2.8</td>
+            <td class="opt-expected opt3">2.8</td>
+          </tr>
+          <tr class="opt">
+            <td class="opt-hit">
+              <input type="text" value="20" data-per="20" />
+            </td>
+            <td class="opt-crit">
+              <input type="text" value="10" />
+            </td>
+            <td class="opt-cnt"><input type="text" value="0" /></td>
+            <td class="opt-expected opt1">2.8</td>
+            <td class="opt-expected opt2">2.8</td>
+            <td class="opt-expected opt3">2.8</td>
+          </tr>
+          <tr class="opt">
+            <td class="opt-hit">
+              <input type="text" value="20" data-per="20" />
+            </td>
+            <td class="opt-crit">
+              <input type="text" value="10" />
+            </td>
+            <td class="opt-cnt"><input type="text" value="0" /></td>
+            <td class="opt-expected opt1">2.8</td>
+            <td class="opt-expected opt2">2.8</td>
+            <td class="opt-expected opt3">2.8</td>
+          </tr>
+          <tr class="score-line">
+            <td colspan="3">점수(14점 목표로)</td>
+            <td class="opt1-score">0</td>
+            <td class="opt2-score">0</td>
+            <td class="opt3-score">0</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="btns">
+        <div class="adv-accept btn">적용</div>
+        <div class="adv-reset btn">초기화</div>
+      </div>
+    </div>
+    <div class="explain">
+      <div class="explain-title">■ 임의 옵션 1개 올리기는 어케 함?</div>
+      <div>
+        - 현재 연성확률/100 을 기댓값으로 생각하고 다른 조언과 비교하면 됨
+      </div>
+
+      <div class="explain-title">■ 도박(ex. -2 ~ 2 / -1 ~ 2)은 어떻게 함?</div>
+      <div>- 종류에 따라 기댓값 계산 (-2 ~ 2 : 0 / -1 ~ 2 : 0.5)</div>
+
+      <div class="explain-title">
+        ■ 왜 같은 확률로 돌려도 기댓값이 아래로 갈수록 큰 것인지?
+      </div>
+      <div>- 5개 옵션 중 확률 낮은 순으로 봉인함</div>
+      <div>- 같은 확률인 경우 위에 있는 순으로 봉인함</div>
+
+      <div class="explain-title">
+        ■ 소진, 질서3 기댓값? 소진 + 질서3 볼 경우 기댓값은 3이다.
+      </div>
+      <div>- 소진기댓값 : 킬몽거(2), 할배(2.5), 할매(0.5)</div>
+      <div>- 봉인페이즈 질서3 기댓값 : 1</div>
+    </div>
+  </body>
+  <script src="js/calc.js"></script>
+</html>
