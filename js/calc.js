@@ -158,7 +158,9 @@ const applyAdvice = (advNo) => {
   });
   const rsltOpt = opts.querySelectorAll(`.opt${advNo}`);
   rsltOpt.forEach((elem, idx) => {
-    elem.innerText = Math.round(aftSuccess[idx] * SIMULCNT) / SIMULCNT;
+    elem.innerText = `${Math.round(aftSuccess[idx] * SIMULCNT) / SIMULCNT} (${
+      Math.round((aftSuccess[idx] - orgSuccess[idx]) * SIMULCNT) / SIMULCNT
+    })`;
   });
 
   // 점수 계산
